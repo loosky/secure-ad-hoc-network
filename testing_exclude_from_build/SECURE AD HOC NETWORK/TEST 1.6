@@ -1,0 +1,541 @@
+root@batman4:~/secure-ad-hoc-network# batmand --role sp -d 4 wlan0
+Secure Ad Hoc Network extension enabled
+Interface activated: wlan0
+Using interface wlan0 with address 10.0.0.4 and broadcast address 10.0.0.255
+B.A.T.M.A.N. 0.3.2 (compatibility version 5)
+debug level: 4
+Attempting to seed the PRNG...
+Successfully seeded the PRNG with 1024 bytes from /dev/urandom.
+[        10] schedule_own_packet(): wlan0 
+[        10]  
+Generated Master Key: 5B:29:09:19:0F:B9:3A:F6:F5:3E:07:3C:61:33:B3:C7
+.......................++++++
+.........++++++
+
+Added new node to AL:
+ID           : 1034
+IP ADDRESS   : 10.0.0.4
+ROLE         : Authenticated Node
+Subject Name : SP_1532451593
+Public Key   :
+-----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDy19WXD20TXBa1S4wmR3eKV2v5
+0miVH0P5Ak8lmF9uOxxhhFYJA4tyQ4L9GclBC6ykURLX/yb5e7yx+qVKSvRqtUiR
+vVDo1972dzsdPzVakmTxKhtpnwlqTVTNgWU6sRigtYReA1JXDOH79rxyyfSLT909
+zECbY85GncdsztF/GwIDAQAB
+-----END PUBLIC KEY-----
+
+[       660] Received BATMAN packet via NB: 10.0.0.55, IF: wlan0 10.0.0.4 (from OG: 10.0.0.55, via old OG: 10.0.0.55, seqno 4, tq 255, TTL 50, V 5, IDF 0) 
+[       660]  
+Sending INVITE message to new node
+Received a PC REQUEST from new node
+Sending/Issuing PC to new node
+Added new node to neighbor list
+
+Added new node to AL:
+ID           : 14090
+IP ADDRESS   : 10.0.0.55
+ROLE         : Authenticated Node
+Subject Name : /CN=SP_1532451593/CN=645853496
+Public Key   :
+-----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDEmU+jsVWgaVvpzddejSv9f/CO
+FkPmIS55KOzduRQMeIP3Z0Dave0ShUOxtivXbULnO3STzIP3/Vaf6Utz4lN6cI49
+q4A2Y2ckW84s1Mubg1NCVUb8gNRnvffOb4MKOpkigp6OlkIlmq15RZYLaRaBNYes
+9rlE7vyIMVi4beqApQIDAQAB
+-----END PUBLIC KEY-----
+
+Broadcast new SIGN message to all neighbors
+Generated New Current Key #1: 1B:45:7A:DF:6C:1D:A6:BB:DB:7D:F0:A5:CD:DA:D6:9C
+Receive SIGN message from neighbor - 10.0.0.55
+Added new keystream to node already in neighbor list
+[      1000] Received BATMAN packet via NB: 10.0.0.3, IF: wlan0 10.0.0.4 (from OG: 10.0.0.3, via old OG: 10.0.0.3, seqno 3, tq 255, TTL 50, V 5, IDF 0) 
+[      1000]  
+Sending INVITE message to new node
+Received a PC REQUEST from new node
+Sending/Issuing PC to new node
+Added new node to neighbor list
+
+Added new node to AL:
+ID           : 778
+IP ADDRESS   : 10.0.0.3
+ROLE         : Authenticated Node
+Subject Name : /CN=SP_1532451593/CN=1813802984
+Public Key   :
+-----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCrQa356n65wSE9p+h89onND1Gy
+16gSBul22VAOCLSYo2qWcg9znEG9WEvTyUI0ahl68G/oXjdMh8FMbSGBywYv8CjD
+f8yrOtrgkAY4FlyXjDDPRmMHSuXtwmJu2MpHwbppAdiWiAPdWG2BWVubK0Mzr3ki
+dNM1UWYLm8U7bQvkPwIDAQAB
+-----END PUBLIC KEY-----
+
+Send SIGN message to neighbor - 10.0.0.3
+Receive SIGN message from neighbor - 10.0.0.3
+Added new keystream to node already in neighbor list
+[      1040]  
+[      1040] Sending own packet (originator 10.0.0.4, seqno 1, TQ 255, TTL 50, IDF off) on interface wlan0
+[      1040] schedule_own_packet(): wlan0 
+[      1040] ------------------ DEBUG ------------------ 
+[      1040] Forward list 
+[      1040]     10.0.0.4 at 2058 
+[      1040] Originator list 
+[      1040]   Originator  (#/255)         Nexthop [outgoingIF]:   Potential nexthops
+[      1040] No batman nodes in range ... 
+[      1040] ---------------------------------------------- END DEBUG 
+[      1040]  
+[      1040] Received BATMAN packet via NB: 10.0.0.4, IF: wlan0 10.0.0.4 (from OG: 10.0.0.4, via old OG: 10.0.0.4, seqno 1, tq 255, TTL 50, V 5, IDF 0) 
+[      1040] Drop packet: received my own broadcast (sender: 10.0.0.4) 
+[      1040]  
+[      1620] Received BATMAN packet via NB: 10.0.0.55, IF: wlan0 10.0.0.4 (from OG: 10.0.0.55, via old OG: 10.0.0.55, seqno 5, tq 255, TTL 50, V 5, IDF 0) 
+MAC Extract did not match!
+STATE = 11
+[      1620]  
+Sending my keystream request!
+Receive SIGN message from neighbor - 10.0.0.55
+Already received this keystream from this neighbor, maybe he does not have mine, sending now!
+Send SIGN message to neighbor - 10.0.0.55
+Added new keystream to node already in neighbor list
+[      2020] Received BATMAN packet via NB: 10.0.0.3, IF: wlan0 10.0.0.4 (from OG: 10.0.0.3, via old OG: 10.0.0.3, seqno 4, tq 255, TTL 50, V 5, IDF 0) 
+MAC Extract did not match!
+[      2020]  
+Sending my keystream request!
+Receive SIGN message from neighbor - 10.0.0.3
+Already received this keystream from this neighbor, maybe he does not have mine, sending now!
+Send SIGN message to neighbor - 10.0.0.3
+Added new keystream to node already in neighbor list
+STATE = 0
+[      2060]  
+[      2070] Sending own packet (originator 10.0.0.4, seqno 2, TQ 255, TTL 50, IDF off) on interface wlan0
+[      2070] schedule_own_packet(): wlan0 
+[      2070] ------------------ DEBUG ------------------ 
+[      2070] Forward list 
+[      2070]     10.0.0.4 at 2979 
+[      2070] Originator list 
+[      2070]   Originator  (#/255)         Nexthop [outgoingIF]:   Potential nexthops
+[      2070] No batman nodes in range ... 
+[      2070] ---------------------------------------------- END DEBUG 
+[      2070]  
+[      2070] Received BATMAN packet via NB: 10.0.0.4, IF: wlan0 10.0.0.4 (from OG: 10.0.0.4, via old OG: 10.0.0.4, seqno 2, tq 255, TTL 50, V 5, IDF 0) 
+[      2070] Drop packet: received my own broadcast (sender: 10.0.0.4) 
+[      2070]  
+[      2160] Received BATMAN packet via NB: 10.0.0.3, IF: wlan0 10.0.0.4 (from OG: 10.0.0.4, via old OG: 10.0.0.4, seqno 2, tq 0, TTL 49, V 5, IDF 1) 
+[      2160] Creating new originator: 10.0.0.3 
+[      2160] count own bcast (is_my_orig): old = 0, [      2160] new = 1 
+[      2160] Drop packet: originator packet from myself (via neighbour) 
+[      2160]  
+[      2200] Received BATMAN packet via NB: 10.0.0.55, IF: wlan0 10.0.0.4 (from OG: 10.0.0.4, via old OG: 10.0.0.4, seqno 2, tq 0, TTL 49, V 5, IDF 1) 
+[      2200] Creating new originator: 10.0.0.55 
+[      2200] count own bcast (is_my_orig): old = 0, [      2200] new = 1 
+[      2200] Drop packet: originator packet from myself (via neighbour) 
+[      2200]  
+[      2640] Received BATMAN packet via NB: 10.0.0.55, IF: wlan0 10.0.0.4 (from OG: 10.0.0.55, via old OG: 10.0.0.55, seqno 6, tq 255, TTL 50, V 5, IDF 0) 
+[      2640] updating last_seqno: old 0, new 6 
+[      2640] Creating new last-hop neighbour of originator
+[      2640] bidirectional: orig = 10.0.0.55       neigh = 10.0.0.55       => own_bcast =  0, real recv =  0, local tq:   0, asym_penalty:   0, total tq:   0 
+[      2640] schedule_forward_packet():  
+[      2640] forwarding: tq_orig: 0, tq_avg: 0, tq_forw: 0, ttl_orig: 49, ttl_forw: 49 
+[      2650] Forward packet: rebroadcast neighbour packet with direct link flag 
+[      2650]  
+[      2740]  
+[      2750]  
+[      2760] Forwarding packet (originator 10.0.0.55, seqno 6, TQ 0, TTL 49, IDF on) on interface wlan0
+[      2760]  
+[      2760] Received BATMAN packet via NB: 10.0.0.4, IF: wlan0 10.0.0.4 (from OG: 10.0.0.55, via old OG: 10.0.0.55, seqno 6, tq 0, TTL 49, V 5, IDF 1) 
+[      2760] Drop packet: received my own broadcast (sender: 10.0.0.4) 
+[      2760]  
+[      2980]  
+[      2990] Sending own packet (originator 10.0.0.4, seqno 3, TQ 255, TTL 50, IDF off) on interface wlan0
+[      2990] schedule_own_packet(): wlan0 
+[      2990] count own bcast (schedule_own_packet): old = 1, [      2990] new = 1 
+[      2990] count own bcast (schedule_own_packet): old = 1, [      2990] new = 1 
+[      2990]  
+[      2990] Received BATMAN packet via NB: 10.0.0.4, IF: wlan0 10.0.0.4 (from OG: 10.0.0.4, via old OG: 10.0.0.4, seqno 3, tq 255, TTL 50, V 5, IDF 0) 
+[      2990] Drop packet: received my own broadcast (sender: 10.0.0.4) 
+[      2990]  
+[      3080] Received BATMAN packet via NB: 10.0.0.55, IF: wlan0 10.0.0.4 (from OG: 10.0.0.4, via old OG: 10.0.0.4, seqno 3, tq 10, TTL 49, V 5, IDF 1) 
+[      3080] count own bcast (is_my_orig): old = 1, [      3080] new = 2 
+[      3080] Drop packet: originator packet from myself (via neighbour) 
+[      3080] ------------------ DEBUG ------------------ 
+[      3080] Forward list 
+[      3080]     10.0.0.4 at 3958 
+[      3080] Originator list 
+[      3080]   Originator  (#/255)         Nexthop [outgoingIF]:   Potential nexthops
+[      3080] No batman nodes in range ... 
+[      3080] ---------------------------------------------- END DEBUG 
+[      3080]  
+[      3080] Received BATMAN packet via NB: 10.0.0.3, IF: wlan0 10.0.0.4 (from OG: 10.0.0.4, via old OG: 10.0.0.4, seqno 3, tq 0, TTL 49, V 5, IDF 1) 
+[      3080] count own bcast (is_my_orig): old = 1, [      3080] new = 2 
+[      3080] Drop packet: originator packet from myself (via neighbour) 
+[      3080]  
+[      3130] Received BATMAN packet via NB: 10.0.0.3, IF: wlan0 10.0.0.4 (from OG: 10.0.0.3, via old OG: 10.0.0.3, seqno 5, tq 255, TTL 50, V 5, IDF 0) 
+[      3130] updating last_seqno: old 0, new 5 
+[      3130] Creating new last-hop neighbour of originator
+[      3130] bidirectional: orig = 10.0.0.3        neigh = 10.0.0.3        => own_bcast =  0, real recv =  0, local tq:   0, asym_penalty:   0, total tq:   0 
+[      3130] schedule_forward_packet():  
+[      3130] forwarding: tq_orig: 0, tq_avg: 0, tq_forw: 0, ttl_orig: 49, ttl_forw: 49 
+[      3130] Forward packet: rebroadcast neighbour packet with direct link flag 
+[      3130]  
+[      3190]  
+[      3200]  
+[      3200] Forwarding packet (originator 10.0.0.3, seqno 5, TQ 0, TTL 49, IDF on) on interface wlan0
+[      3200]  
+[      3200] Received BATMAN packet via NB: 10.0.0.4, IF: wlan0 10.0.0.4 (from OG: 10.0.0.3, via old OG: 10.0.0.3, seqno 5, tq 0, TTL 49, V 5, IDF 1) 
+[      3200] Drop packet: received my own broadcast (sender: 10.0.0.4) 
+[      3200]  
+[      3610] Received BATMAN packet via NB: 10.0.0.55, IF: wlan0 10.0.0.4 (from OG: 10.0.0.55, via old OG: 10.0.0.55, seqno 7, tq 255, TTL 50, V 5, IDF 0) 
+[      3610] updating last_seqno: old 6, new 7 
+[      3610] bidirectional: orig = 10.0.0.55       neigh = 10.0.0.55       => own_bcast =  1, real recv =  1, local tq: 255, asym_penalty:  12, total tq:  12 
+[      3610] update_originator(): Searching and updating originator entry of received packet,  
+[      3610] Updating existing last-hop neighbour of originator
+[      3610] update_routes() 
+[      3610] Route to 10.0.0.55 via 10.0.0.55
+[      3610] Adding new route
+[      3610] Adding route to 10.0.0.55 via 0.0.0.0 (table 66 - wlan0)
+[      3610] schedule_forward_packet():  
+[      3610] forwarding: tq_orig: 12, tq_avg: 12, tq_forw: 11, ttl_orig: 49, ttl_forw: 49 
+[      3610] Forward packet: rebroadcast neighbour packet with direct link flag 
+[      3610]  
+[      3710]  
+[      3720] Forwarding packet (originator 10.0.0.55, seqno 7, TQ 10, TTL 49, IDF on) on interface wlan0
+[      3720]  
+[      3720] Received BATMAN packet via NB: 10.0.0.4, IF: wlan0 10.0.0.4 (from OG: 10.0.0.55, via old OG: 10.0.0.55, seqno 7, tq 10, TTL 49, V 5, IDF 1) 
+[      3720] Drop packet: received my own broadcast (sender: 10.0.0.4) 
+[      3720]  
+[      3960]  
+[      3970] Sending own packet (originator 10.0.0.4, seqno 4, TQ 255, TTL 50, IDF off) on interface wlan0
+[      3970] schedule_own_packet(): wlan0 
+[      3970] count own bcast (schedule_own_packet): old = 2, [      3970] new = 2 
+[      3970] count own bcast (schedule_own_packet): old = 2, [      3970] new = 2 
+[      3970]  
+[      3970] Received BATMAN packet via NB: 10.0.0.4, IF: wlan0 10.0.0.4 (from OG: 10.0.0.4, via old OG: 10.0.0.4, seqno 4, tq 255, TTL 50, V 5, IDF 0) 
+[      3970] Drop packet: received my own broadcast (sender: 10.0.0.4) 
+[      3970]  
+[      4040] Received BATMAN packet via NB: 10.0.0.55, IF: wlan0 10.0.0.4 (from OG: 10.0.0.4, via old OG: 10.0.0.4, seqno 4, tq 22, TTL 49, V 5, IDF 1) 
+[      4040] count own bcast (is_my_orig): old = 2, [      4040] new = 3 
+[      4040] Drop packet: originator packet from myself (via neighbour) 
+[      4040]  
+[      4060] Received BATMAN packet via NB: 10.0.0.3, IF: wlan0 10.0.0.4 (from OG: 10.0.0.4, via old OG: 10.0.0.4, seqno 4, tq 9, TTL 49, V 5, IDF 1) 
+[      4060] count own bcast (is_my_orig): old = 2, [      4060] new = 3 
+[      4060] Drop packet: originator packet from myself (via neighbour) 
+[      4060]  
+[      4150] Received BATMAN packet via NB: 10.0.0.3, IF: wlan0 10.0.0.4 (from OG: 10.0.0.3, via old OG: 10.0.0.3, seqno 6, tq 255, TTL 50, V 5, IDF 0) 
+[      4150] updating last_seqno: old 5, new 6 
+[      4150] bidirectional: orig = 10.0.0.3        neigh = 10.0.0.3        => own_bcast =  1, real recv =  1, local tq: 255, asym_penalty:  12, total tq:  12 
+[      4150] update_originator(): Searching and updating originator entry of received packet,  
+[      4150] Updating existing last-hop neighbour of originator
+[      4150] update_routes() 
+[      4150] Route to 10.0.0.3 via 10.0.0.3
+[      4150] Adding new route
+[      4150] Adding route to 10.0.0.3 via 0.0.0.0 (table 66 - wlan0)
+[      4150] schedule_forward_packet():  
+[      4150] forwarding: tq_orig: 12, tq_avg: 12, tq_forw: 11, ttl_orig: 49, ttl_forw: 49 
+[      4150] Forward packet: rebroadcast neighbour packet with direct link flag 
+[      4150] ------------------ DEBUG ------------------ 
+[      4150] Forward list 
+[      4150]     10.0.0.3 at 4283 
+[      4150]     10.0.0.4 at 4992 
+[      4150] Originator list 
+[      4150]   Originator  (#/255)         Nexthop [outgoingIF]:   Potential nexthops
+[      4150]        10.0.0.3 ( 12)        10.0.0.3 [     wlan0], last_valid: 4150: 
+[      4150]         10.0.0.3 ( 12) 
+[      4150]       10.0.0.55 ( 12)       10.0.0.55 [     wlan0], last_valid: 3610: 
+[      4150]        10.0.0.55 ( 12) 
+[      4150] ---------------------------------------------- END DEBUG 
+[      4150]  
+[      4280]  
+[      4280]  
+[      4290]  
+[      4300] Forwarding packet (originator 10.0.0.3, seqno 6, TQ 10, TTL 49, IDF on) on interface wlan0
+[      4300]  
+[      4300] Received BATMAN packet via NB: 10.0.0.4, IF: wlan0 10.0.0.4 (from OG: 10.0.0.3, via old OG: 10.0.0.3, seqno 6, tq 10, TTL 49, V 5, IDF 1) 
+[      4300] Drop packet: received my own broadcast (sender: 10.0.0.4) 
+[      4300]  
+[      4680] Received BATMAN packet via NB: 10.0.0.55, IF: wlan0 10.0.0.4 (from OG: 10.0.0.55, via old OG: 10.0.0.55, seqno 8, tq 255, TTL 50, V 5, IDF 0) 
+[      4680] updating last_seqno: old 7, new 8 
+[      4680] bidirectional: orig = 10.0.0.55       neigh = 10.0.0.55       => own_bcast =  2, real recv =  2, local tq: 255, asym_penalty:  24, total tq:  24 
+[      4680] update_originator(): Searching and updating originator entry of received packet,  
+[      4680] Updating existing last-hop neighbour of originator
+[      4680] update_routes() 
+[      4680] schedule_forward_packet():  
+[      4680] forwarding: tq_orig: 24, tq_avg: 18, tq_forw: 23, ttl_orig: 49, ttl_forw: 49 
+[      4680] Forward packet: rebroadcast neighbour packet with direct link flag 
+[      4680]  
+[      4790]  
+[      4800] Forwarding packet (originator 10.0.0.55, seqno 8, TQ 22, TTL 49, IDF on) on interface wlan0
+[      4800]  
+[      4800] Received BATMAN packet via NB: 10.0.0.4, IF: wlan0 10.0.0.4 (from OG: 10.0.0.55, via old OG: 10.0.0.55, seqno 8, tq 22, TTL 49, V 5, IDF 1) 
+[      4800] Drop packet: received my own broadcast (sender: 10.0.0.4) 
+[      4800]  
+[      4900] Received BATMAN packet via NB: 10.0.0.3, IF: wlan0 10.0.0.4 (from OG: 10.0.0.55, via old OG: 10.0.0.4, seqno 8, tq 0, TTL 48, V 5, IDF 0) 
+[      4900] Drop packet: originator packet with tq is 0 
+[      4900]  
+[      4990]  
+[      4990]  
+[      5000]  
+[      5000] Sending own packet (originator 10.0.0.4, seqno 5, TQ 255, TTL 50, IDF off) on interface wlan0
+[      5000] schedule_own_packet(): wlan0 
+[      5000] count own bcast (schedule_own_packet): old = 3, [      5000] new = 3 
+[      5000] count own bcast (schedule_own_packet): old = 3, [      5000] new = 3 
+[      5000]  
+[      5010] Received BATMAN packet via NB: 10.0.0.4, IF: wlan0 10.0.0.4 (from OG: 10.0.0.4, via old OG: 10.0.0.4, seqno 5, tq 255, TTL 50, V 5, IDF 0) 
+[      5010] Drop packet: received my own broadcast (sender: 10.0.0.4) 
+[      5010]  
+[      5080] Received BATMAN packet via NB: 10.0.0.55, IF: wlan0 10.0.0.4 (from OG: 10.0.0.4, via old OG: 10.0.0.4, seqno 5, tq 32, TTL 49, V 5, IDF 1) 
+[      5080] count own bcast (is_my_orig): old = 3, [      5080] new = 4 
+[      5080] Drop packet: originator packet from myself (via neighbour) 
+[      5080]  
+[      5180] Received BATMAN packet via NB: 10.0.0.3, IF: wlan0 10.0.0.4 (from OG: 10.0.0.4, via old OG: 10.0.0.4, seqno 5, tq 21, TTL 49, V 5, IDF 1) 
+[      5180] count own bcast (is_my_orig): old = 3, [      5180] new = 4 
+[      5180] Drop packet: originator packet from myself (via neighbour) 
+[      5180] ------------------ DEBUG ------------------ 
+[      5180] Forward list 
+[      5180]     10.0.0.4 at 6012 
+[      5180] Originator list 
+[      5180]   Originator  (#/255)         Nexthop [outgoingIF]:   Potential nexthops
+[      5180]        10.0.0.3 ( 12)        10.0.0.3 [     wlan0], last_valid: 4150: 
+[      5180]         10.0.0.3 ( 12) 
+[      5180]       10.0.0.55 ( 18)       10.0.0.55 [     wlan0], last_valid: 4680: 
+[      5180]        10.0.0.55 ( 18) 
+[      5180] ---------------------------------------------- END DEBUG 
+[      5180]  
+[      5220] Received BATMAN packet via NB: 10.0.0.3, IF: wlan0 10.0.0.4 (from OG: 10.0.0.3, via old OG: 10.0.0.3, seqno 7, tq 255, TTL 50, V 5, IDF 0) 
+[      5220] updating last_seqno: old 6, new 7 
+[      5220] bidirectional: orig = 10.0.0.3        neigh = 10.0.0.3        => own_bcast =  2, real recv =  2, local tq: 255, asym_penalty:  24, total tq:  24 
+[      5220] update_originator(): Searching and updating originator entry of received packet,  
+[      5220] Updating existing last-hop neighbour of originator
+[      5220] update_routes() 
+[      5220] schedule_forward_packet():  
+[      5220] forwarding: tq_orig: 24, tq_avg: 18, tq_forw: 23, ttl_orig: 49, ttl_forw: 49 
+[      5220] Forward packet: rebroadcast neighbour packet with direct link flag 
+[      5220]  
+[      5280]  
+[      5290]  
+[      5300] Forwarding packet (originator 10.0.0.3, seqno 7, TQ 22, TTL 49, IDF on) on interface wlan0
+[      5300]  
+[      5300] Received BATMAN packet via NB: 10.0.0.4, IF: wlan0 10.0.0.4 (from OG: 10.0.0.3, via old OG: 10.0.0.3, seqno 7, tq 22, TTL 49, V 5, IDF 1) 
+[      5300] Drop packet: received my own broadcast (sender: 10.0.0.4) 
+[      5300]  
+[      5460] Received BATMAN packet via NB: 10.0.0.55, IF: wlan0 10.0.0.4 (from OG: 10.0.0.3, via old OG: 10.0.0.4, seqno 7, tq 1, TTL 48, V 5, IDF 0) 
+[      5460] Drop packet: ignoring all rebroadcast echos (sender: 10.0.0.55) 
+[      5460]  
+[      5700] Received BATMAN packet via NB: 10.0.0.55, IF: wlan0 10.0.0.4 (from OG: 10.0.0.55, via old OG: 10.0.0.55, seqno 9, tq 255, TTL 50, V 5, IDF 0) 
+[      5700] updating last_seqno: old 8, new 9 
+[      5700] bidirectional: orig = 10.0.0.55       neigh = 10.0.0.55       => own_bcast =  3, real recv =  3, local tq: 255, asym_penalty:  35, total tq:  35 
+[      5700] update_originator(): Searching and updating originator entry of received packet,  
+[      5700] Updating existing last-hop neighbour of originator
+[      5700] update_routes() 
+[      5700] schedule_forward_packet():  
+[      5700] forwarding: tq_orig: 35, tq_avg: 23, tq_forw: 34, ttl_orig: 49, ttl_forw: 49 
+[      5700] Forward packet: rebroadcast neighbour packet with direct link flag 
+[      5700]  
+[      5780]  
+[      5790]  
+[      5800] Forwarding packet (originator 10.0.0.55, seqno 9, TQ 32, TTL 49, IDF on) on interface wlan0
+[      5800]  
+[      5800] Received BATMAN packet via NB: 10.0.0.4, IF: wlan0 10.0.0.4 (from OG: 10.0.0.55, via old OG: 10.0.0.55, seqno 9, tq 32, TTL 49, V 5, IDF 1) 
+[      5800] Drop packet: received my own broadcast (sender: 10.0.0.4) 
+[      5800]  
+[      5950] Received BATMAN packet via NB: 10.0.0.3, IF: wlan0 10.0.0.4 (from OG: 10.0.0.55, via old OG: 10.0.0.4, seqno 9, tq 2, TTL 48, V 5, IDF 0) 
+[      5950] Drop packet: ignoring all rebroadcast echos (sender: 10.0.0.3) 
+[      5950]  
+[      6010]  
+[      6020]  
+[      6020] Sending own packet (originator 10.0.0.4, seqno 6, TQ 255, TTL 50, IDF off) on interface wlan0
+[      6020] schedule_own_packet(): wlan0 
+[      6020] count own bcast (schedule_own_packet): old = 4, [      6020] new = 4 
+[      6020] count own bcast (schedule_own_packet): old = 4, [      6020] new = 4 
+[      6020]  
+[      6020] Received BATMAN packet via NB: 10.0.0.4, IF: wlan0 10.0.0.4 (from OG: 10.0.0.4, via old OG: 10.0.0.4, seqno 6, tq 255, TTL 50, V 5, IDF 0) 
+[      6020] Drop packet: received my own broadcast (sender: 10.0.0.4) 
+[      6020]  
+[      6100] Received BATMAN packet via NB: 10.0.0.55, IF: wlan0 10.0.0.4 (from OG: 10.0.0.4, via old OG: 10.0.0.4, seqno 6, tq 42, TTL 49, V 5, IDF 1) 
+[      6100] count own bcast (is_my_orig): old = 4, [      6100] new = 5 
+[      6100] Drop packet: originator packet from myself (via neighbour) 
+[      6100]  
+[      6160] Received BATMAN packet via NB: 10.0.0.3, IF: wlan0 10.0.0.4 (from OG: 10.0.0.4, via old OG: 10.0.0.4, seqno 6, tq 30, TTL 49, V 5, IDF 1) 
+[      6160] count own bcast (is_my_orig): old = 4, [      6160] new = 5 
+[      6160] Drop packet: originator packet from myself (via neighbour) 
+[      6160]  
+[      6170] Received BATMAN packet via NB: 10.0.0.3, IF: wlan0 10.0.0.4 (from OG: 10.0.0.3, via old OG: 10.0.0.3, seqno 8, tq 255, TTL 50, V 5, IDF 0) 
+[      6170] updating last_seqno: old 7, new 8 
+[      6170] bidirectional: orig = 10.0.0.3        neigh = 10.0.0.3        => own_bcast =  3, real recv =  3, local tq: 255, asym_penalty:  35, total tq:  35 
+[      6170] update_originator(): Searching and updating originator entry of received packet,  
+[      6170] Updating existing last-hop neighbour of originator
+[      6170] update_routes() 
+[      6170] schedule_forward_packet():  
+[      6170] forwarding: tq_orig: 35, tq_avg: 23, tq_forw: 34, ttl_orig: 49, ttl_forw: 49 
+[      6170] Forward packet: rebroadcast neighbour packet with direct link flag 
+[      6170]  
+[      6270]  
+[      6280] Forwarding packet (originator 10.0.0.3, seqno 8, TQ 32, TTL 49, IDF on) on interface wlan0
+[      6280] ------------------ DEBUG ------------------ 
+[      6280] Forward list 
+[      6280]     10.0.0.4 at 7040 
+[      6280] Originator list 
+[      6280]   Originator  (#/255)         Nexthop [outgoingIF]:   Potential nexthops
+[      6280]        10.0.0.3 ( 23)        10.0.0.3 [     wlan0], last_valid: 6170: 
+[      6280]         10.0.0.3 ( 23) 
+[      6280]       10.0.0.55 ( 23)       10.0.0.55 [     wlan0], last_valid: 5700: 
+[      6280]        10.0.0.55 ( 23) 
+[      6280] ---------------------------------------------- END DEBUG 
+[      6280]  
+[      6280] Received BATMAN packet via NB: 10.0.0.4, IF: wlan0 10.0.0.4 (from OG: 10.0.0.3, via old OG: 10.0.0.3, seqno 8, tq 32, TTL 49, V 5, IDF 1) 
+[      6280] Drop packet: received my own broadcast (sender: 10.0.0.4) 
+[      6280]  
+[      6350] Received BATMAN packet via NB: 10.0.0.55, IF: wlan0 10.0.0.4 (from OG: 10.0.0.3, via old OG: 10.0.0.4, seqno 8, tq 3, TTL 48, V 5, IDF 0) 
+[      6350] Drop packet: ignoring all rebroadcast echos (sender: 10.0.0.55) 
+[      6350]  
+[      6790] Received BATMAN packet via NB: 10.0.0.55, IF: wlan0 10.0.0.4 (from OG: 10.0.0.55, via old OG: 10.0.0.55, seqno 10, tq 255, TTL 50, V 5, IDF 0) 
+[      6790] updating last_seqno: old 9, new 10 
+[      6790] bidirectional: orig = 10.0.0.55       neigh = 10.0.0.55       => own_bcast =  4, real recv =  4, local tq: 255, asym_penalty:  45, total tq:  45 
+[      6790] update_originator(): Searching and updating originator entry of received packet,  
+[      6790] Updating existing last-hop neighbour of originator
+[      6790] update_routes() 
+[      6790] schedule_forward_packet():  
+[      6790] forwarding: tq_orig: 45, tq_avg: 29, tq_forw: 44, ttl_orig: 49, ttl_forw: 49 
+[      6790] Forward packet: rebroadcast neighbour packet with direct link flag 
+[      6790]  
+[      6940]  
+[      6950] Forwarding packet (originator 10.0.0.55, seqno 10, TQ 42, TTL 49, IDF on) on interface wlan0
+[      6950]  
+[      6950] Received BATMAN packet via NB: 10.0.0.4, IF: wlan0 10.0.0.4 (from OG: 10.0.0.55, via old OG: 10.0.0.55, seqno 10, tq 42, TTL 49, V 5, IDF 1) 
+[      6950] Drop packet: received my own broadcast (sender: 10.0.0.4) 
+[      6950]  
+[      7040]  
+[      7040] Received BATMAN packet via NB: 10.0.0.3, IF: wlan0 10.0.0.4 (from OG: 10.0.0.55, via old OG: 10.0.0.4, seqno 10, tq 5, TTL 48, V 5, IDF 0) 
+[      7040] Drop packet: ignoring all rebroadcast echos (sender: 10.0.0.3) 
+[      7040] Sending own packet (originator 10.0.0.4, seqno 7, TQ 255, TTL 50, IDF off) on interface wlan0
+[      7040] schedule_own_packet(): wlan0 
+[      7040] count own bcast (schedule_own_packet): old = 5, [      7040] new = 5 
+[      7040] count own bcast (schedule_own_packet): old = 5, [      7040] new = 5 
+[      7040]  
+[      7040] Received BATMAN packet via NB: 10.0.0.4, IF: wlan0 10.0.0.4 (from OG: 10.0.0.4, via old OG: 10.0.0.4, seqno 7, tq 255, TTL 50, V 5, IDF 0) 
+[      7040] Drop packet: received my own broadcast (sender: 10.0.0.4) 
+[      7040]  
+[      7140] Received BATMAN packet via NB: 10.0.0.3, IF: wlan0 10.0.0.4 (from OG: 10.0.0.4, via old OG: 10.0.0.4, seqno 7, tq 41, TTL 49, V 5, IDF 1) 
+[      7140] count own bcast (is_my_orig): old = 5, [      7140] new = 6 
+[      7140] Drop packet: originator packet from myself (via neighbour) 
+[      7140]  
+[      7180] Received BATMAN packet via NB: 10.0.0.55, IF: wlan0 10.0.0.4 (from OG: 10.0.0.4, via old OG: 10.0.0.4, seqno 7, tq 51, TTL 49, V 5, IDF 1) 
+[      7180] count own bcast (is_my_orig): old = 5, [      7180] new = 6 
+[      7180] Drop packet: originator packet from myself (via neighbour) 
+[      7180]  
+[      7230] Received BATMAN packet via NB: 10.0.0.3, IF: wlan0 10.0.0.4 (from OG: 10.0.0.3, via old OG: 10.0.0.3, seqno 9, tq 255, TTL 50, V 5, IDF 0) 
+[      7230] updating last_seqno: old 8, new 9 
+[      7230] bidirectional: orig = 10.0.0.3        neigh = 10.0.0.3        => own_bcast =  4, real recv =  4, local tq: 255, asym_penalty:  45, total tq:  45 
+[      7230] update_originator(): Searching and updating originator entry of received packet,  
+[      7230] Updating existing last-hop neighbour of originator
+[      7230] update_routes() 
+[      7230] schedule_forward_packet():  
+[      7230] forwarding: tq_orig: 45, tq_avg: 29, tq_forw: 44, ttl_orig: 49, ttl_forw: 49 
+[      7230] Forward packet: rebroadcast neighbour packet with direct link flag 
+[      7230]  
+[      7300]  
+[      7310] Forwarding packet (originator 10.0.0.3, seqno 9, TQ 42, TTL 49, IDF on) on interface wlan0
+[      7310] ------------------ DEBUG ------------------ 
+[      7310] Forward list 
+[      7310]     10.0.0.4 at 7991 
+[      7310] Originator list 
+[      7310]   Originator  (#/255)         Nexthop [outgoingIF]:   Potential nexthops
+[      7310]        10.0.0.3 ( 29)        10.0.0.3 [     wlan0], last_valid: 7230: 
+[      7310]         10.0.0.3 ( 29) 
+[      7310]       10.0.0.55 ( 29)       10.0.0.55 [     wlan0], last_valid: 6790: 
+[      7310]        10.0.0.55 ( 29) 
+[      7310] ---------------------------------------------- END DEBUG 
+[      7310]  
+[      7310] Received BATMAN packet via NB: 10.0.0.4, IF: wlan0 10.0.0.4 (from OG: 10.0.0.3, via old OG: 10.0.0.3, seqno 9, tq 42, TTL 49, V 5, IDF 1) 
+[      7310] Drop packet: received my own broadcast (sender: 10.0.0.4) 
+[      7310]  
+[      7410] Received BATMAN packet via NB: 10.0.0.55, IF: wlan0 10.0.0.4 (from OG: 10.0.0.3, via old OG: 10.0.0.4, seqno 9, tq 7, TTL 48, V 5, IDF 0) 
+[      7410] Drop packet: ignoring all rebroadcast echos (sender: 10.0.0.55) 
+[      7420]  
+[      7740] Received BATMAN packet via NB: 10.0.0.55, IF: wlan0 10.0.0.4 (from OG: 10.0.0.55, via old OG: 10.0.0.55, seqno 11, tq 255, TTL 50, V 5, IDF 0) 
+[      7740] updating last_seqno: old 10, new 11 
+[      7740] bidirectional: orig = 10.0.0.55       neigh = 10.0.0.55       => own_bcast =  5, real recv =  5, local tq: 255, asym_penalty:  56, total tq:  56 
+[      7740] update_originator(): Searching and updating originator entry of received packet,  
+[      7740] Updating existing last-hop neighbour of originator
+[      7740] update_routes() 
+[      7740] schedule_forward_packet():  
+[      7740] forwarding: tq_orig: 56, tq_avg: 34, tq_forw: 54, ttl_orig: 49, ttl_forw: 49 
+[      7740] Forward packet: rebroadcast neighbour packet with direct link flag 
+[      7740]  
+[      7860]  
+[      7860]  
+[      7860]  
+[      7860]  
+[      7860]  
+[      7870]  
+[      7880] Forwarding packet (originator 10.0.0.55, seqno 11, TQ 51, TTL 49, IDF on) on interface wlan0
+[      7880]  
+[      7880] Received BATMAN packet via NB: 10.0.0.4, IF: wlan0 10.0.0.4 (from OG: 10.0.0.55, via old OG: 10.0.0.55, seqno 11, tq 51, TTL 49, V 5, IDF 1) 
+[      7880] Drop packet: received my own broadcast (sender: 10.0.0.4) 
+[      7880]  
+[      7960] Received BATMAN packet via NB: 10.0.0.3, IF: wlan0 10.0.0.4 (from OG: 10.0.0.55, via old OG: 10.0.0.4, seqno 11, tq 9, TTL 48, V 5, IDF 0) 
+[      7960] Drop packet: ignoring all rebroadcast echos (sender: 10.0.0.3) 
+[      7960]  
+[      7990]  
+[      7990]  
+[      7990]  
+[      7990]  
+[      8000]  
+[      8000] Sending own packet (originator 10.0.0.4, seqno 8, TQ 255, TTL 50, IDF off) on interface wlan0
+[      8000] schedule_own_packet(): wlan0 
+[      8000] count own bcast (schedule_own_packet): old = 6, [      8000] new = 6 
+[      8000] count own bcast (schedule_own_packet): old = 6, [      8000] new = 6 
+[      8000]  
+[      8000] Received BATMAN packet via NB: 10.0.0.4, IF: wlan0 10.0.0.4 (from OG: 10.0.0.4, via old OG: 10.0.0.4, seqno 8, tq 255, TTL 50, V 5, IDF 0) 
+[      8000] Drop packet: received my own broadcast (sender: 10.0.0.4) 
+[      8000]  
+[      8070] Received BATMAN packet via NB: 10.0.0.55, IF: wlan0 10.0.0.4 (from OG: 10.0.0.4, via old OG: 10.0.0.4, seqno 8, tq 61, TTL 49, V 5, IDF 1) 
+[      8070] count own bcast (is_my_orig): old = 6, [      8070] new = 7 
+[      8070] Drop packet: originator packet from myself (via neighbour) 
+[      8070]  
+[      8090] Received BATMAN packet via NB: 10.0.0.3, IF: wlan0 10.0.0.4 (from OG: 10.0.0.4, via old OG: 10.0.0.4, seqno 8, tq 49, TTL 49, V 5, IDF 1) 
+[      8090] count own bcast (is_my_orig): old = 6, [      8090] new = 7 
+[      8090] Drop packet: originator packet from myself (via neighbour) 
+[      8090]  
+[      8320] Received BATMAN packet via NB: 10.0.0.3, IF: wlan0 10.0.0.4 (from OG: 10.0.0.3, via old OG: 10.0.0.3, seqno 10, tq 255, TTL 50, V 5, IDF 0) 
+[      8320] updating last_seqno: old 9, new 10 
+[      8320] bidirectional: orig = 10.0.0.3        neigh = 10.0.0.3        => own_bcast =  5, real recv =  5, local tq: 255, asym_penalty:  56, total tq:  56 
+[      8320] update_originator(): Searching and updating originator entry of received packet,  
+[      8320] Updating existing last-hop neighbour of originator
+[      8320] update_routes() 
+[      8320] schedule_forward_packet():  
+[      8320] forwarding: tq_orig: 56, tq_avg: 34, tq_forw: 54, ttl_orig: 49, ttl_forw: 49 
+[      8320] Forward packet: rebroadcast neighbour packet with direct link flag 
+[      8320] ------------------ DEBUG ------------------ 
+[      8320] Forward list 
+[      8320]     10.0.0.3 at 8451 
+[      8320]     10.0.0.4 at 8934 
+[      8320] Originator list 
+[      8320]   Originator  (#/255)         Nexthop [outgoingIF]:   Potential nexthops
+[      8320]        10.0.0.3 ( 34)        10.0.0.3 [     wlan0], last_valid: 8320: 
+[      8320]         10.0.0.3 ( 34) 
+[      8320]       10.0.0.55 ( 34)       10.0.0.55 [     wlan0], last_valid: 7740: 
+[      8320]        10.0.0.55 ( 34) 
+[      8320] ---------------------------------------------- END DEBUG 
+[      8320]  
+[      8450]  
+[      8450]  
+[      8450]  
+[      8450]  
+[      8460]  
+[      8460] Forwarding packet (originator 10.0.0.3, seqno 10, TQ 51, TTL 49, IDF on) on interface wlan0
+[      8460]  
+[      8460] Received BATMAN packet via NB: 10.0.0.4, IF: wlan0 10.0.0.4 (from OG: 10.0.0.3, via old OG: 10.0.0.3, seqno 10, tq 51, TTL 49, V 5, IDF 1) 
+[      8460] Drop packet: received my own broadcast (sender: 10.0.0.4) 
+[      8460]  
+^C[      8840] Received BATMAN packet via NB: 10.0.0.55, IF: wlan0 10.0.0.4 (from OG: 10.0.0.3, via old OG: 10.0.0.4, seqno 10, tq 11, TTL 48, V 5, IDF 0) 
+[      8840] Drop packet: ignoring all rebroadcast echos (sender: 10.0.0.55) 
+Deleting all BATMAN routes
+[      8840] Originator timeout: originator 10.0.0.3, last_valid 8320 
+[      8840] update_routes() 
+[      8840] Deleting previous route
+[      8840] Deleting route to 10.0.0.3 via 0.0.0.0 (table 66 - wlan0)
+[      8840] Originator timeout: originator 10.0.0.55, last_valid 7740 
+[      8840] update_routes() 
+[      8840] Deleting previous route
+[      8840] Deleting route to 10.0.0.55 via 0.0.0.0 (table 66 - wlan0)
+WARNING: Destroying AM Sockets!
+root@batman4:~/secure-ad-hoc-network# 
+
